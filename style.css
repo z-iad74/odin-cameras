@@ -1,6 +1,7 @@
 * {
     margin: 0;
     /* padding: 0; */
+    /* border: 2px solid blue; */
 }
 
 .container{
@@ -9,9 +10,10 @@
     align-items: stretch;
 }
 
+/* Navigation bar */
 nav{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     background-color: #1F2937;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -20,6 +22,7 @@ nav{
 
 #logo{
     margin-right: auto;
+    margin-left: 6.7em;
     font-size: 24px;
     font-weight: bold;
     color: #F9FAF8;
@@ -29,8 +32,9 @@ nav > ul{
     display: flex;
     list-style: none;
     gap: 30px;
+    padding-left: 0;
     margin-left: auto;
-    margin-right: 80px;
+    margin-right: 9em;
     flex-shrink: 0;
     font-size: 18px;
     color: #E5E7EB;
@@ -45,8 +49,61 @@ nav > ul > li > a:hover{
     color: #e5e7ebc5;
 }
 
-.cntr {
-    flex: initial;
-    width: 200px;
-    flex-shrink: 1;
+
+/* Hero part */
+.hero{
+    display: flex;
+    height: 280px;
+    justify-content: space-between;
+    padding: 30px 0;
+    background-color: #1F2937;
+    gap: 10px;
+}
+.hero > .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 10em;
+    font-family: sans-serif;
+    gap: 10px;
+    flex-grow: 0;
+}
+
+.hero > .content > h1{
+    font-size: 48px;
+    font-weight: bolder;
+    color:  #F9FAF8;
+    max-width: auto;
+    flex-grow: 0;
+}
+
+.hero > .content > p{
+    font-size: 18px;
+    color: #E5E7EB;
+    max-width: auto;
+    flex-grow: 0;
+}
+
+.hero > img{
+    width: 500px;
+    height: auto;
+    margin-right: 10em;
+    flex: 0 0 auto;
+
+}
+
+.hero > .content > button{
+    background-color: #3882F6;
+    border-radius: 5px;
+    color:  #F9FAF8;
+    font-size: 20px;
+    font-weight: bold;
+    padding: .3em 1.5em;
+    width: fit-content;
+    justify-items: flex-end;
+}
+
+button:hover{
+    background-color: #3881f6b6;
+    cursor: pointer;
 }
