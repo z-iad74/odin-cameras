@@ -1,13 +1,12 @@
 * {
     margin: 0;
-    /* padding: 0; */
-    /* border: 2px solid blue; */
+    border:2px solid blueviolet;
+    font-family: sans-serif;
 }
 
 .container{
     display: flex;
     flex-direction: column;
-    align-items: stretch;
 }
 
 /* Navigation bar */
@@ -17,13 +16,13 @@ nav{
     align-items: center;
     background-color: #1F2937;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    padding: 20px 0;
+    padding: 50px 0;
 }
 
 #logo{
     margin-right: auto;
-    margin-left: 6.7em;
-    font-size: 24px;
+    margin-left: 4.6em;
+    font-size: 35px;
     font-weight: bold;
     color: #F9FAF8;
 }
@@ -53,11 +52,12 @@ nav > ul > li > a:hover{
 /* Hero part */
 .hero{
     display: flex;
-    height: 280px;
+    height: 300px;
     justify-content: space-between;
-    padding: 30px 0;
+    padding: 50px 0;
     background-color: #1F2937;
     gap: 10px;
+    flex: 1;
 }
 .hero > .content{
     display: flex;
@@ -85,11 +85,10 @@ nav > ul > li > a:hover{
 }
 
 .hero > img{
-    width: 500px;
-    height: auto;
+    width: auto;
+    height: 300px;
     margin-right: 10em;
-    flex: 0 0 auto;
-
+    flex-shrink: 0;
 }
 
 .hero > .content > button{
@@ -106,4 +105,51 @@ nav > ul > li > a:hover{
 button:hover{
     background-color: #3881f6b6;
     cursor: pointer;
+}
+
+/* Gallery part */
+.gallery{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 40px 0;
+}
+
+.gallery > h1 {
+    align-self: center;
+    font-size: 36px; 
+    font-weight: bolder; 
+    color : #1F2937;
+}
+.gallery .photos{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.gallery > .photos > .image{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.gallery > .photos > .image > img{
+    border: 5px solid #3882F6;
+    border-radius: 15px;
+    width: 200px;
+    height: auto;
+}
+
+.gallery > .photos > .image > p{
+    width: 200px;
+    text-align: center;
+}
+
+/* Qoute part */
+.qoute{
+    background-color: #E5E7EB;
 }
