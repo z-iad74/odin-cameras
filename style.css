@@ -1,6 +1,6 @@
 * {
     margin: 0;
-    border:2px solid blueviolet;
+    /* border:2px solid blueviolet; */
     font-family: sans-serif;
 }
 
@@ -169,14 +169,61 @@ button:hover{
     text-align: right;
     font-size: 30px;
     font-weight: bold;
+    margin-top: 10px;
 }
 
 
 .padd{
-    padding: 20px 10em;
+    padding: 8em 15em;
+}
+
+/* ad part */
+.ad{
+    display: flex;
+    justify-content: center;
+    padding: 80px 100px;
+    background-color: #F9FAF8;
+}
+
+.ad > .padd{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 60%;
+    background-color: #3882F6;
+    border-radius: 20px;
+    padding: 40px 80px;
+}
+
+.ad > .adcontent{
+    display: flex;
+    
+}
+
+.ad > .padd > .adcontent > h1{
+    color: #E5E7EB;
+    font-size: 24px;
+}
+.ad > .padd > .adcontent > p{
+    color: #E5E7EB;
+    font-size: 18px;
+}
+
+.ad > .padd > button{
+    color:  #F9FAF8;
+    border: 3px solid #F9FAF8;
+    background-color: #3882F6;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: .3em 1.5em;
+    width: fit-content;
+    flex-shrink: 0;
 }
 
 
+/* footer */
 footer{
     padding: 40px 0;
     text-align: center;
