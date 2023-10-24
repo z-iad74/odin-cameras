@@ -175,3 +175,11 @@ button:hover{
 .padd{
     padding: 20px 10em;
 }
+
+
+footer{
+    padding: 40px 0;
+    text-align: center;
+    background-color: #1F2937;
+    color: #E5E7EB;
+}
